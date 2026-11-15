@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mine Missão: construa, explore e jogue com a comunidade. Conheça o modpack e prepare sua próxima aventura.">
+  <title>Mine Missão — Um mundo para construir juntos</title>
+  <link rel="icon" href="assets/airship.webp">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <div class="nav-top">
+      <a class="brand" href="#" aria-label="Mine Missão início">
+        <img class="brand-icon" src="assets/airship.webp" alt="" width="60" height="60">
+        <span>MINE MISSÃO</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#mundo">O mundo</a>
+        <a href="#modpack">Modpack</a>
+        <a href="#comecar">Como jogar</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme" type="button" aria-label="Ativar tema claro">☼</button>
+        <a class="nav-join" href="#comecar">Começar <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero sky-scene" aria-label="Abertura no céu com o dirigível 14">
+      <div class="scene-layer sky-layer" data-depth="0.03" aria-hidden="true">
+        <img src="assets/sky.webp" alt="" width="1200" height="675" fetchpriority="high">
+      </div>
+      <div class="scene-layer cloud-layer" data-depth="0.05" aria-hidden="true">
+        <img src="assets/sky.webp" alt="" width="1200" height="675">
+      </div>
+      <div class="scene-haze" aria-hidden="true"></div>
+      <div class="scene-layer airship-layer" data-depth="0.14">
+        <div class="airship-float">
+          <img src="assets/airship.webp" alt="Dirigível laranja com o número 14, logo do projeto Mine Missão" width="760" height="760">
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <span class="eyebrow">EXPEDIÇÃO / MINE MISSÃO</span>
+        <h1>O céu é só<br>o <em>começo.</em></h1>
+        <p>Embarque no dirigível, conheça o modpack na descida e chegue até a comunidade no chão.</p>
+        <a class="button hero-cta" href="#comecar">Começar a aventura <span aria-hidden="true">↗</span></a>
+        <p class="hero-access">Gratuito para jogar · Instalação guiada e comunidade no Discord</p>
+      </div>
+
+      <div class="scene-bottom">
+        <span>Cenário ilustrativo · Logo original do projeto</span>
+        <button id="motion-toggle" type="button" aria-pressed="false">Pausar animações <span aria-hidden="true">Ⅱ</span></button>
+      </div>
+    </section>
+
+    <div class="journey-descent">
+      <div class="armillary-compass" aria-hidden="true">
+        <svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="400" cy="400" r="356" stroke="currentColor" stroke-width="2" stroke-dasharray="14 14" />
+          <circle cx="400" cy="400" r="326" stroke="currentColor" stroke-width="2" />
+          <circle cx="400" cy="400" r="250" stroke="currentColor" stroke-width="1.6" />
+          <ellipse cx="400" cy="400" rx="292" ry="112" transform="rotate(-28 400 400)" stroke="currentColor" stroke-width="2" />
+          <ellipse cx="400" cy="400" rx="292" ry="112" transform="rotate(28 400 400)" stroke="currentColor" stroke-width="2" />
+          <line x1="400" y1="48" x2="400" y2="752" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 8" />
+          <line x1="48" y1="400" x2="752" y2="400" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 8" />
+          <polygon points="400,156 426,374 400,400 374,374" stroke="currentColor" stroke-width="2" />
+          <polygon points="400,644 426,426 400,400 374,426" stroke="currentColor" stroke-width="2" />
+          <polygon points="644,400 426,426 400,400 426,374" stroke="currentColor" stroke-width="2" />
+          <polygon points="156,400 374,426 400,400 374,374" stroke="currentColor" stroke-width="2" />
+          <circle cx="400" cy="400" r="28" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </div>
+
+      <section class="world section textured-stone" id="mundo">
+        <div class="section-heading">
+          <span class="eyebrow">01 / NA DESCIDA: UM MUNDO DE POSSIBILIDADES</span>
+          <h2>Menos limites.<br>Mais <em>“e se?”</em></h2>
+        </div>
+
+        <div class="world-grid">
+          <article class="feature feature-large">
+            <div class="real-video" data-video="rR8W-f9YhYA" data-title="This is Create. (2022)">
+              <button class="video-play" type="button" aria-label="Reproduzir: This is Create. (2022)">
+                <img src="https://i.ytimg.com/vi/rR8W-f9YhYA/hqdefault.jpg" alt="" loading="lazy" referrerpolicy="no-referrer">
+                <span class="play-disc" aria-hidden="true">▶</span>
+              </button>
+            </div>
+            <h3>Construa com Create.</h3>
+            <div class="video-source">Por Simi Cats · <a href="https://www.youtube.com/watch?v=rR8W-f9YhYA" target="_blank" rel="noopener noreferrer">Ver no YouTube ↗</a></div>
+          </article>
+
+          <article class="feature explore">
+            <div class="clip-preview">
+              <video class="ambient-clip" muted loop playsinline preload="none" poster="assets/exploration-poster.webp" aria-label="Gameplay real de Minecraft: coleta de madeira e caminhada pela floresta">
+                <source data-src="assets/exploration.mp4" type="video/mp4">
+              </video>
+              <button class="clip-toggle" type="button" aria-label="Reproduzir prévia de exploração" aria-pressed="false">Reproduzir</button>
+              <span class="clip-error" hidden>Prévia indisponível</span>
+            </div>
+            <h3>Explore seu próximo mundo.</h3>
+            <div class="video-source">Xbox México · <a href="https://commons.wikimedia.org/wiki/File:Minecraft_Gameplay.webm" target="_blank" rel="noopener noreferrer">Fonte</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> · Adaptado, sem áudio</div>
+          </article>
+
+          <article class="feature community">
+            <div class="community-pending" role="img" aria-label="PDC: gravação real e anonimizada da comunidade em preparação">
+              <svg viewBox="0 0 64 48" aria-hidden="true">
+                <path d="M13 10h38v23H30L19 41v-8h-6z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                <circle cx="24" cy="22" r="2.2" fill="currentColor" />
+                <circle cx="32" cy="22" r="2.2" fill="currentColor" />
+                <circle cx="40" cy="22" r="2.2" fill="currentColor" />
+              </svg>
+              <strong>PDC · Comunidade no Discord</strong>
+              <span>Gravação da turma em preparação</span>
+            </div>
+            <h3>A aventura é em grupo.</h3>
+            <div class="video-source">Comunidade no Discord</div>
+          </article>
+        </div>
+        <p class="media-note">Gameplay de referência. Não é uma gravação do servidor.</p>
+      </section>
+
+      <section class="mod-section section textured-dirt" id="modpack">
+        <div class="mod-heading">
+          <div>
+            <span class="eyebrow">02 / DENTRO DO MODPACK</span>
+            <h2>Ferramentas para<br>suas grandes <em>ideias.</em></h2>
+          </div>
+          <p>Uma prévia do que faz parte da aventura.</p>
+        </div>
+
+        <div class="mod-list">
+          <article class="mod-tile">
+            <img src="assets/oak_planks.png" alt="" loading="lazy">
+            <h3>Create</h3>
+            <p>Mecanismos e automação.</p>
+            <small>CONSTRUA</small>
+          </article>
+          <article class="mod-tile">
+            <img src="assets/grass_block_side.png" alt="" loading="lazy">
+            <h3>Terralith</h3>
+            <p>Novos biomas e paisagens.</p>
+            <small>EXPLORE</small>
+          </article>
+          <article class="mod-tile">
+            <img src="assets/grass_block_top.png" alt="" loading="lazy">
+            <h3>Farmer’s Delight</h3>
+            <p>Cultivo e culinária.</p>
+            <small>CULTIVE</small>
+          </article>
+          <article class="mod-tile">
+            <img src="assets/oak_log.png" alt="" loading="lazy">
+            <h3>Sophisticated Backpacks</h3>
+            <p>Mochilas para suas viagens.</p>
+            <small>ORGANIZE</small>
+          </article>
+        </div>
+        <p class="mod-note">Seleção provisória de mods. A lista final, versões e launcher serão confirmados pelo Enéas.</p>
+      </section>
+
+      <section class="start section textured-stone" id="comecar">
+        <div class="start-intro">
+          <span class="eyebrow">03 / DAQUI ATÉ O PRIMEIRO BLOCO</span>
+          <h2>Sua aventura<br>começa <em>aqui.</em></h2>
+          <p>Três passos para preparar seu PC, instalar o pacote e encontrar a turma.</p>
+          <div class="release-note">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Preparando a próxima entrada</strong>
+              <p>Pacote oficial, requisitos e convite do Discord serão liberados aqui após confirmação do Enéas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article>
+            <span class="step-number">01</span>
+            <div>
+              <h3>Prepare seu computador</h3>
+              <p>Confira os requisitos e escolha o perfil gráfico adequado no launcher (todos usam os mesmos mods do servidor).</p>
+
+              <details>
+                <summary>Ver requisitos, perfis e diferença de RAM <span>+</span></summary>
+                <p>Perfis planejados: <strong>Mais leve</strong> (sem shaders, distância reduzida), <strong>Equilibrado</strong> (recomendado para jogar em grupo) e <strong>Visual</strong> (alcance maior). Importante: a <strong>memória RAM total do PC</strong> é diferente da <strong>RAM alocada ao Minecraft</strong> no launcher. Não instale versões aleatórias de Java ou drivers por conta própria.</p>
+              </details>
+            </div>
+          </article>
+
+          <article>
+            <span class="step-number">02</span>
+            <div>
+              <h3>Baixe o modpack</h3>
+              <p>Use o pacote oficial de importação no launcher indicado pela equipe.</p>
+              <button type="button" class="button secondary pending" data-message="O modpack ainda não foi vinculado. A equipe precisa confirmar o arquivo, o checksum e a versão oficial.">
+                Baixar modpack <span>↓</span>
+              </button>
+              <span class="availability">Pacote, versão e checksum em confirmação</span>
+            </div>
+          </article>
+
+          <article>
+            <span class="step-number">03</span>
+            <div>
+              <h3>Entre no Discord</h3>
+              <p>Veja as regras, libere seu acesso ao servidor e jogue em grupo.</p>
+              <button type="button" class="button secondary pending" data-message="O convite oficial do Discord ainda será adicionado pela equipe.">
+                Entrar no Discord <span>↗</span>
+              </button>
+              <span class="availability">Convite oficial em confirmação</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq section" id="duvidas">
+        <div>
+          <span class="eyebrow">04 / ANTES DE PARTIR</span>
+          <h2>Ficou alguma<br><em>dúvida?</em></h2>
+        </div>
+
+        <div class="questions">
+          <details class="help-disclosure">
+            <summary>Precisa de ajuda para instalar? <span>+</span></summary>
+            <div class="help-tool">
+              <h3>Travou em alguma etapa?</h3>
+              <p>Selecione o problema e veja como resolver.</p>
+              <label for="help-topic">Onde você precisa de ajuda?</label>
+              <select id="help-topic">
+                <option value="install">Não sei como instalar</option>
+                <option value="launch">O jogo não abre</option>
+                <option value="join">Não consigo entrar no servidor</option>
+                <option value="performance">O jogo está lento</option>
+              </select>
+              <output id="help-answer" aria-live="polite">Confira se está usando o pacote e o launcher indicados pela equipe. Anote em qual etapa parou e peça o passo a passo no Discord.</output>
+              <button id="copy-help" type="button" class="button secondary">Copiar modelo para pedir ajuda</button>
+            </div>
+          </details>
+
+          <details>
+            <summary>Preciso pagar para jogar? <span>+</span></summary>
+            <p>Não cobramos pelo acesso ao servidor ou ao modpack. O acesso é gratuito e nenhuma vantagem no jogo depende de pagamento.</p>
+          </details>
+
+          <details>
+            <summary>O jogo não abriu. Onde peço ajuda? <span>+</span></summary>
+            <p>O canal de suporte no Discord e a identificação da pessoa ou equipe responsável pelo atendimento serão confirmados junto ao lançamento do pacote. Informe sempre o sistema do computador, a versão do modpack e a mensagem de erro.</p>
+          </details>
+
+          <details>
+            <summary>Posso contribuir com o projeto? <span>+</span></summary>
+            <p>Sim: traga ideias, ajude novos jogadores e participe das construções. O link oficial do APOIA.se para apoio financeiro voluntário será publicado assim que for confirmado pelo Enéas.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+
+    <section class="closing ground-arrival" aria-label="Chegada à casa com moinho d'água">
+      <div class="ground-landscape" aria-hidden="true">
+        <img src="assets/land.webp" alt="" width="1536" height="1024" loading="lazy">
+      </div>
+      <div class="ground-veil" aria-hidden="true"></div>
+
+      <div class="closing-content">
+        <span class="eyebrow">CHEGADA AO CHÃO · O MUNDO É DE BLOCOS</span>
+        <h2>Nos vemos<br>do outro <em>lado.</em> <span>↗</span></h2>
+        <p>A viagem começa no céu e termina na casa com moinho d’água.</p>
+        <div class="closing-actions">
+          <a class="button primary" href="#comecar">Começar minha aventura <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <footer>
+        <a class="brand" href="#">
+          <img src="assets/airship.webp" alt="" width="65" height="65">
+          <span>MINE MISSÃO</span>
+        </a>
+        <p>Uma comunidade. Infinitas possibilidades.</p>
+        <span>Projeto independente criado por Enéas, sem afiliação à Mojang ou Microsoft.</span>
+      </footer>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="app.js"></script>
+  <script src="help.js"></script>
+  <script src="scene.js"></script>
+  <script src="media.js"></script>
+</body>
+</html>
